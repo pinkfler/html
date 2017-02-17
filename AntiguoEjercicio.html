@@ -34,6 +34,41 @@
         .xx a:hover {
             color: blue;
         }
+
+        #s33 img {
+            content:url(https://lh4.googleusercontent.com/FPvTe6pCwYnfqcG7coWDrZ0_XN_psxgeoE06zad5c1_gtXKhClizGftUzbUk1OlxvfTLhntVeA=s128-h128-e365);
+            width: 12px;
+        }
+
+        #s33 {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+#s33 .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+#s33:hover .tooltiptext {
+    visibility: visible;
+}
+
+       
+
+
     </style>
 </head>
 
@@ -44,7 +79,12 @@
     <h2 id="pepe">titulo</h2>
     <p class="xx"> texto <a href="http://www.google.es">enlace</a> xx</p>
     <div>Bloque</div>
-    <div><span>A</span><span>B</span><span>C</span>D</div>
+    <div>
+        <span id="s33"><img /><span class="tooltiptext">Tooltip text</span></span>
+        <span>B</span>
+        <span>C</span>
+        D
+    </div>
     <div><span>A</span><span>B</span><span>C</span>D</div>
     <div><span>A</span><span>B</span><span>C</span>D</div>
 
