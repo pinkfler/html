@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>P&aacute;gina de acceso</title>
+<link rel="icon" type="image/png" sizes="32x32"
+	href="./skins/gvi/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96"
+	href="./skins/gvi/img/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16"
+	href="./skins/gvi/img/favicon-16x16.png">
+<style>
+html {
+	background: url(./skins/gvi/img/login_background.jpg) no-repeat center
+		center fixed;
+	background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	font-family: 'MuseoSansRounded-300', sans-serif;
+}
+
+body {
+	text-align: center;
+}
+
+.redessociales img {
+	margin: 10px;
+}
+
+.error {
+	color: #FFA420;
+}
+
+#user {
+	background: url(./skins/gvi/img/user_24.png) no-repeat scroll 7px 7px;
+}
+
+#password {
+	background: url(./skins/gvi/img/padlock_24.png) no-repeat scroll 7px 7px;
+}
+
+.loginbox {
+	height: 500px;
+	width: 300px;
+	background-color: rgba(90, 40, 9, 0.9);;
+	color: #F8CD8D;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 15px;
+}
+
+.logo {
+	height: 150px;
+	width: 300px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.form input {
+	width: 80%;
+	padding: 12px 40px;
+	margin: 4px 0;
+	box-sizing: border-box;
+	border: none;
+	border-bottom: 1px solid #F8CD8D;
+	color: #F8CD8D;
+	outline-color: #F8CD8D;
+}
+
+.form input:focus {
+	color: white;
+	border-bottom: 1px solid #F8CD8D;
+}
+
+.form input[type=submit] {
+	background-color: #F8CD8D;
+	margin: 40px 0;
+	color: #5A2809;
+}
+</style>
+</head>
+<body>
+	<div class="loginbox">
+		<div class="logo">
+			<img src="./skins/gvi/img/logo.png" alt="Grantia Capital" />
+		</div>
+		<div class="error">@@errorInfo@@&nbsp;</div>
+		<div class="form">
+			<form method="post">
+				<input type='email' id='user' name='user' required='required'
+					value='' placeholder='Email del usuario' /> <input type='password'
+					id='password' name='password' required='required' value=''
+					placeholder='Contrase&ntilde;a' /> <input type='submit'
+					value='Iniciar sesi&oacute;n' />
+			</form>
+		</div>
+		O
+		<div class="redessociales">
+			<img src="./skins/gvi/img/google-plus.png" /> <img
+				src="./skins/gvi/img/facebook.png" /> <img
+				src="./skins/gvi/img/twitter.png" />
+		</div>
+	</div>
+</body>
+</html>
